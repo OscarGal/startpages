@@ -1,0 +1,197 @@
+* {
+  font-family: "Share Tech Mono", monospace;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #0c131f;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: white;
+  color: #1d2940;
+}
+
+::-moz-selection {
+  background: white;
+  color: #1d2940;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+#greeting {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+#time {
+  color: white;
+  font-size: 2rem;
+  margin-top: 60px;
+}
+
+#search_eng_form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#search_eng_form button,
+#search_eng_form input {
+  background: #111b2d;
+  height: 50px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#search_eng_form button:hover {
+  background: #253655;
+  cursor: pointer;
+}
+
+#search_eng_form input {
+  min-width: 400px;
+  width: 580px;
+  text-align: center;
+	color: white;
+	font-size: 1rem;
+}
+
+#search_eng_form input:focus {
+  background: #1d2940;
+}
+
+.se_btn {
+  width: 55px;
+  color: white;
+}
+
+.se_btn img {
+  filter: invert(1);
+  width: 30px;
+  height: 30px;
+}
+
+.go {
+  background: blue;
+  width: 60px;
+  color: white;
+  font-size: 1rem;
+}
+
+.search_block {
+  margin-bottom: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 80px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  --linux: #98c379;
+  --entertainment: #e06c75;
+  --dev: #d19a66;
+  --social: #c678dd;
+}
+
+.card p {
+  font-size: 2rem;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.card a:last-child {
+  margin-bottom: 0px !important;
+}
+
+.card a {
+  color: #9b9b9b;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  transition: all 0.1s;
+}
+
+.card a:hover {
+  color: white;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.entertainment,
+.social,
+.dev,
+.linux {
+  /*display: inline-block;*/
+  /* background-color: #192232; */
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #1d2940;
+  min-width: 150px;
+  width: 220px;
+  transition: border-color 0.2s, background-color 0.3s, border-left 0.3s ease-in,
+    border-top 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.linux p {
+  color: var(--linux);
+}
+
+.entertainment p {
+  color: var(--entertainment);
+}
+
+.social p {
+  color: var(--social);
+}
+
+.dev p {
+  color: var(--dev);
+}
+
+.entertainment:hover,
+.social:hover,
+.dev:hover,
+.linux:hover {
+  background: #111b2d;
+  border-color: #8f9299;
+}
+
+/* .entertainment:hover {
+  border-top: 2px solid var(--entertainment);
+  border-left: 2px solid var(--entertainment);
+}
+
+.social:hover {
+  border-top: 2px solid var(--social);
+  border-left: 2px solid var(--social);
+}
+
+.dev:hover {
+  border-top: 2px solid var(--dev);
+  border-left: 2px solid var(--dev);
+}
+
+.linux:hover {
+  border-top: 2px solid var(--linux);
+  border-left: 2px solid var(--linux);
+} */
